@@ -4,14 +4,14 @@ $(function () {
     $('td').css('text-align','center');
 
     $('#affiche').click(function () { 
-        $('tr').first().show('slow', function showNextOne(){
-            $(this).next('tr').show('slow', showNextOne);
+        $('tr').first().fadeIn('slow', function showNextOne(){
+            $(this).next('tr').fadeIn('slow', showNextOne);
         })
     });
 
     $('#cache').click(function () {  
-        $('tr').first().hide('slow', function hideNextOne() {
-            $(this).next('tr').hide('slow', hideNextOne);
+        $('tr').first().fadeOut('slow', function hideNextOne() {
+            $(this).next('tr').fadeOut('slow', hideNextOne);
         })
     })
 })
