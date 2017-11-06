@@ -1,5 +1,5 @@
 $(function () {
-    $('img').first().fadeOut(2000, function suivante() {
-        $(this).next('img').fadeOut(2000,suivante);
+    $('#afficheMessage').click(function () {
+        $('#message').fadeIn('slow').delay(2000).fadeOut('slow');
     });
 })
